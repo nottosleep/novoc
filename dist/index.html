@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>NOVOC - Агентство недвижимости</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__info-row container">
+            <div class="header__logo">
+                <a href="#" class="header__logo-link"></a>
+            </div>
+            <div class="header__adress-block">
+                <p class="header__adress-title">Агентство недвижимости</p>
+                <p class="header__adress"><span class="header__adress-icon"></span>Москва, «Беляево», ул. Миклухо-Маклая, д. 43</p>
+            </div>
+            <div class="header__phone-block">
+                <p class="header__phone">+7 (495) 276-03-03</p>
+                <p class="header__work-time">Пн-Пт: с 09.00 до 21.00, Сб-Вс: с 10.00 до 17.00</p>
+            </div>
+            <div class="header__btn-block">
+                <a href="#" class="header__btn-link">Бесплатная консультация</a>
+            </div>
+        </div>
+        <nav class="header__nav container">
+            <div class="header__wrapper">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item-link">Новостройки</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item-link">Элитная недвижимость</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item-link">Вторичная недвижимость</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item-link">Коммерческая недвижимость</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item-link">Ипотека</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item-link">Услуги</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-item-link">Контакты</a>
+                    </li>
+                </ul>
+                <span class="header__search"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="filter__section">
+        <h1 class="filter__title">Купить квартиру в новостройке</h1>
+        <div class="filter__block">
+            <form action="" method="POST" class="filter__form">
+                <div class="filter__form-top">
+                    <div class="filter__form-top-l">
+                        <p class="filter__form-top-title">Стоимость, млн руб.</p>
+                        <input type="text" name="" value="" id="range-slider"
+                            data-type="double"
+                            data-min="1"
+                            data-max="69"
+                            data-from="1"
+                            data-to="69"
+                            data-grid="false"
+                        />
+                    </div>
+                    <div class="filter__form-top-r">
+                        <div class="filter__checkbox-block">
+                            <div class="filter__checkbox-row">
+                                <input type="checkbox" name="" class="filter__checkbox-input" id="reg-1">
+                                <label for="reg-1" class="filter__checkbox-label">Москва и Новая Москва</label>
+                            </div>
+                            <br/>
+                            <div class="filter__checkbox-row">
+                                <input type="checkbox" name="" class="filter__checkbox-input" id="reg-2">
+                                <label for="reg-2" class="filter__checkbox-label">Московская область</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__form-bottom">
+                    <div class="filter__select-block">
+                        <select name="" class="filter__select">
+                            <option value="0">Станция метро</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="filter__select-block">
+                        <select name="" class="filter__select">
+                            <option value="0">Тип жилья</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="filter__select-block">
+                        <select name="" class="filter__select">
+                            <option value="0">Площадь</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="filter__select-block">
+                        <select name="" class="filter__select">
+                            <option value="0">Тип отделки</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="filter__select-block">
+                        <select name="" class="filter__select">
+                            <option value="0">Срок сдачи</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Найти" class="filter__submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="map__section">
+        <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c8cbc68d44b279eae576dbd4ba6e7850d00bec815ba88ac7c2152c92096e802&amp;width=100%25&amp;height=495&amp;lang=ru_RU&amp;scroll=false">
+        </script>
+    </section>
+    <div class="feedback__block">
+        <div class="feedback__btn">
+            <img src="img/phone.png" alt="phone" class="feedback__btn-icon">
+            <div class="feedback__btn-text">Обратный звонок</div>
+        </div>
+        <div class="feedback__btn">
+            <img src="img/calendar.png" alt="calendar" class="feedback__btn-icon">
+            <div class="feedback__btn-text">Записаться на показ</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
